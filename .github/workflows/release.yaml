@@ -1,12 +1,12 @@
 name: Build Release
 
 # Builds the downloadable Companion module (.tgz) and publishes it on the Releases page.
-# Runs when changes land on the main branch, or by hand from the Actions tab.
+# Runs when changes land on the master branch, or by hand from the Actions tab.
 # The version in package.json must be higher than the latest release, otherwise this stops with an error.
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
